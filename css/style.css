@@ -31,6 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+
 }
 
 header h1 {
@@ -39,26 +40,42 @@ header h1 {
 }
 
 header nav {
-    margin-right: 20px;
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 710px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    
     .nav {
-        margin-right: 40px;
+        margin-right: 20px;
         margin-left: 20px;
         
     }
 
+
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        justify-content: center;
+        margin-right: 5px;
+        margin-left: 5px;
+        
+    }
 }
 
 header nav a {
     color: var(--quaternary-color);
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 
