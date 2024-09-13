@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMUR Research Lab</title>
+    <style>
+        /* Color palette */
+        :root {
+            --primary-color: #3C306B;
+            --secondary-color: #8879C5;
+            --tertiary-color: #9CCABD;
+            --quaternary-color: #F8F9FA;
+            --quinary-color: #81C3B7;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--quaternary-color);
+            color: var(--primary-color);
+        }
+
+        /* Header styling */
+        header {
+            background-color: var(--primary-color);
+            color: var(--quaternary-color);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header nav {
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: var(--quaternary-color);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        header nav a:hover {
+            color: var(--tertiary-color);
+        }
+
+        /* Section styling */
+        section {
+            padding: 60px 20px;
+            margin-top: 70px;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 32px;
+            color: var(--primary-color);
+        }
+
+        /* Home section */
+        #home {
+            background-color: var(--quinary-color);
+        }
+
+        /* People section */
+        .people-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .person {
+            text-align: center;
+            margin: 20px;
+            background-color: var(--tertiary-color);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .person img {
+            border-radius: 50%;
+            max-width: 250px;
+            height: auto;
+        }
+
+        /* Projects section */
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: var(--tertiary-color);
+            border-radius: 10px;
+        }
+
+        /* News section */
+        .photo-montage {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .photo-montage img {
+            margin: 10px;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Contact section */
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Laboratory for<br>Extended and Mixed User Realities</h1>
+	<img src="src/tempLogo.png" height="100px" alt="Lab Director">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#people">People</a>
+            <a href="#projects">Projects</a>
+            <a href="#news">News</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-heading">Welcome to LEMUR</div>
+        <p><br>At LEMUR, we are advancind research in virtual and augmented realities for the Social Good.<br><br>We believe these technologies are the user interfaces of the future, and we explore what is needed to help them achieve their true potential.</p>
+        <video width="100%" controls>
+            <source src="src/Move_It_Move_It.mp4" type="video/mp4">
+            Ysour browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- People Section -->
+    <section id="people">
+        <div class="section-heading">Meet Our Team</div>
+        <div class="people-grid">
+            <div class="person">
+                <img src="src/rojas-munoz.jpg" alt="Lab Director">
+                <h3>Edgar Rojas-Muñoz</h3>
+                <p>Lab Director</p>
+		<p>Early career Faculty working on Mixed Reality for the Social Good.<br><br><a href="https://people.tamu.edu/~ed.rojas/">Webpage</a></p>
+            </div>
+            <!-- Add more people below -->
+            <div class="person">
+                <img src="member_photo.jpg" alt="Research Member">
+                <h3>Raquel Cabrera-Araya</h3>
+                <p>PhD Student</p>
+            </div>
+            <div class="person">
+                <img src="member_photo.jpg" alt="Research Member">
+                <h3>Graciela Camacho-Fidalgo</h3>
+                <p>PhD Student</p>
+            </div>
+            <div class="person">
+                <img src="member_photo.jpg" alt="Research Member">
+                <h3>Kyper Bezanson</h3>
+                <p>PhD Student</p>
+            </div>
+            <div class="person">
+                <img src="member_photo.jpg" alt="Research Member">
+                <h3>Lawrence Soberanis</h3>
+                <p>PhD Student</p>
+            </div>
+            <div class="person">
+                <img src="src/kylee.jpeg" alt="Research Member">
+                <h3>Kylee Friederichs</h3>
+                <p>PhD Student in Computer Engineering currently working on "Ocean of Memories" and "VirtuHS".</p>
+            </div>
+            <div class="person">
+                <img src="member_photo.jpg" alt="Research Member">
+                <h3>Blain Judkins</h3>
+                <p>PhD Student</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-heading">Our Current Projects</div>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img style="max-width: 450px; max-height: 300px" src="src/OoM.png" alt="Project 1">
+                <h3>Ocean of Memories</h3>
+                <p>An Augmented Reality soundwalk on the UN's Sustainable Development Goal: "Life Under Water" in 
+                    collaboration with artists in residence Chromic Duo, and PVFA Faculty and Students</p>
+            </div>
+            <div class="project">
+                <!-- <img src="project1.jpg" alt="Project 1"> -->
+                <h3>VirtuHS</h3>
+                <p>Creating self-sustainable collaborative virtual reality learning experiences for high school students and instructors
+                    based on a user-centered design approach to help develop these experiences.
+                </p>
+            </div>
+        </div>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <div class="section-heading">Lab News</div>
+        <div class="photo-montage">
+            <img src="news1.jpg" alt="News 1">
+            <img src="news2.jpg" alt="News 2">
+            <img src="news3.jpg" alt="News 3">
+        </div>
+        <ul>
+            <li>Event 1 - Date</li>
+            <li>Event 2 - Date</li>
+            <li>Event 3 - Date</li>
+        </ul>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="section-heading">Our Publications</div>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="publication1.jpg" alt="Publication 1">
+                <h3>Publication 1</h3>
+                <p>Description of publication 1.</p>
+            </div>
+            <!-- Add more publications below -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-heading">Contact Us</div>
+        <div class="contact-info">
+            <p>For general inquiries, please contact ed.rojas@tamu.edu</p>
+            <p><strong>Mailing Address:</strong><br>Haynes Engineering Building, Room 210<br>727 Ross St, College Station, TX, 77840</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.0280744073926!2d-96.3414831!3d30.619770199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468396b69d3367%3A0xe99254c7dba633a!2sHaynes%20Engineering%20Building%20(HEB)!5e0!3m2!1sen!2sus!4v1694538651750!5m2!1sen!2sus"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+</body>
+</html>
